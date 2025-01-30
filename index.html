@@ -25,7 +25,7 @@
   </head>
   <body>
     <!--Promo Bar - Bar with the promo text and the countdown-->
-    <div class="promo_bar d-flex justify-content-center">
+    <div class="container-fluid promo_bar d-flex justify-content-center">
       <p class="mt-1">FREE delivery & 40% Discount for next 3 orders! Place your 1st order in.</p>
       <p class="text2 mt-1 ms-5">Until the end of the sale:</p>
       <div class="time_left d-flex mx-2 mt-1">
@@ -48,30 +48,34 @@
       </div>
     </div>
     <div class="container">
-      <!--Info bar-->
-      <div class="info_bar d-flex gap-4 mt-1 mb-0">
-        <a href="" class="text-decoration-none">About Us</a>
-        <a href="" class="text-decoration-none"> Track order</a>
-        <p class="mb-0">
-          We delivery every day from
-          <span class="text-danger fw-bold ms-2">07:00 to 20:00</span>
-        </p>
-        <div class="ms-auto mb-0 gap-2">
-          <select id="language">
-            <option value="EN">English</option>
-            <option value="PT">Portugues</option>
-            <option value="DEU">Deutsch</option>
-          </select>
-          <select id="currency">
-            <option value="eur">EUR</option>
-            <option value="usd">USD</option>
-          </select>
+      <header class="">
+        <!--Info bar-->
+        <div class="info_bar d-flex gap-4 mt-1 mb-0">
+          <a href="" class="text-decoration-none">About Us</a>
+          <a href="" class="text-decoration-none"> Track order</a>
+
+          <p class="mb-0">
+            We delivery every day from
+            <span class="text-danger fw-bold ms-2">07:00 to 20:00</span>
+          </p>
+
+          <div class="ms-auto mb-0 gap-2">
+            <select id="language">
+              <option value="EN">English</option>
+              <option value="PT">Portugues</option>
+              <option value="DEU">Deutsch</option>
+            </select>
+            <select id="currency">
+              <option value="eur">EUR</option>
+              <option value="usd">USD</option>
+            </select>
+          </div>
+          <button id="theme_switch" class="border-0">
+            <img src="./assets/icon/dark mode_moon.svg" alt="dark mode moon" />
+            <img src="./assets/icon/light mode_sun.svg" alt="light mode sun" />
+          </button>
         </div>
-        <button id="theme_switch" class="border-0">
-          <img src="./assets/icon/dark mode_moon.svg" alt="dark mode moon" />
-          <img src="./assets/icon/light mode_sun.svg" alt="light mode sun" />
-        </button>
-      </div>
+      </header>
     </div>
   </body>
 </html>
