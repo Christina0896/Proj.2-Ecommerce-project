@@ -27,3 +27,26 @@ const countdown = setInterval(() => {
     clearInterval(countdown);
   }
 }, 1000);
+
+//Dark Mode//
+const themeSwitch = document.getElementById('theme_switch');
+
+// Check and apply dark mode from localStorage
+if (localStorage.getItem('dark_mode') === 'active') {
+  document.body.classList.add('dark_mode');
+}
+// Toggle dark mode on button click
+themeSwitch.addEventListener('click', () => {
+  // Toggle the dark_mode class
+  document.body.classList.toggle('dark_mode');
+
+  // Check if dark mode is active
+  const isDarkMode = document.body.classList.contains('dark_mode');
+
+  // Update localStorage based on the current state
+  if (isDarkMode) {
+    localStorage.setItem('dark_mode', 'active');
+  } else {
+    localStorage.setItem('dark_mode', 'inactive');
+  }
+});

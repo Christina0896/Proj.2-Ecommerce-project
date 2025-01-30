@@ -20,7 +20,7 @@
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css file/home.css" />
+    <link rel="stylesheet" href="css_file/home.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -45,6 +45,32 @@
           <p id="seconds">00</p>
           <span>Sec.</span>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <!--Info bar-->
+      <div class="info_bar d-flex gap-4 mt-1 mb-0">
+        <a href="" class="text-decoration-none">About Us</a>
+        <a href="" class="text-decoration-none"> Track order</a>
+        <p class="mb-0">
+          We delivery every day from
+          <span class="text-danger fw-bold ms-2">07:00 to 20:00</span>
+        </p>
+        <div class="ms-auto mb-0 gap-2">
+          <select id="language">
+            <option value="EN">English</option>
+            <option value="PT">Portugues</option>
+            <option value="DEU">Deutsch</option>
+          </select>
+          <select id="currency">
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+          </select>
+        </div>
+        <button id="theme_switch" class="border-0">
+          <img src="./assets/icon/dark mode_moon.svg" alt="dark mode moon" />
+          <img src="./assets/icon/light mode_sun.svg" alt="light mode sun" />
+        </button>
       </div>
     </div>
   </body>
