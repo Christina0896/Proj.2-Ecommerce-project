@@ -4,6 +4,7 @@
   --backgroundcolor2: #634c9f;
   --fontcolor1: #030712;
   --fontcolor2: #6b7280;
+  --fontcolor3: #6b7280;
   --footer: #f3f4f6;
 }
 
@@ -13,6 +14,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: var(--backgroundcolor1);
   font-family: 'Inter';
 }
 img {
@@ -23,4 +25,25 @@ a {
 }
 ul {
   list-style: none;
+}
+select {
+  border: none;
+}
+.dark_mode {
+  --backgroundcolor1: #070b1d;
+  --fontcolor1: #030712;
+  --fontcolor2: #ffffff;
+  --fontcolor3: #6b7280;
+}
+#theme_switch img {
+  display: flex;
+}
+#theme_switch img:last-child {
+  display: none;
+}
+.dark_mode #theme_switch img:first-child {
+  display: none;
+}
+.dark_mode #theme_switch img:last-child {
+  display: block;
 }
