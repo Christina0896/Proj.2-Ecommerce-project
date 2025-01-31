@@ -59,6 +59,67 @@ h4 {
   border-radius: 0 8px 8px 0;
   border: 1px solid #dddddd;
 }
+/*Side bar*/
+.home_bar {
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
+
+.cat_list li {
+  color: var(--fontcolor1);
+  font-weight: 400;
+}
+.home_navbar a {
+  position: relative;
+  color: var(--fontcolor1);
+  font-weight: 500;
+}
+.home_navbar a:after {
+  content: '';
+  position: absolute;
+  background-color: var(--backgroundcolor2);
+  height: 2px;
+  border-radius: 10px;
+  width: 0%;
+  top: 2.6em;
+  right: 1px;
+}
+.home_navbar a:hover {
+  color: var(--backgroundcolor2);
+}
+.home_navbar a:hover::after {
+  width: 100%;
+  color: var(--backgroundcolor2);
+}
+.home_navbar a.active {
+  color: var(--backgroundcolor2);
+}
+.home_navbar a.active::after {
+  width: 100%;
+}
+/* Special hover styling for 'Almost Finished' */
+.home_navbar a.sale {
+  color: red; /* Default color for special link */
+}
+
+.home_navbar a.sale::after {
+  background-color: red; /* Underline default color for special link */
+}
+
+.home_navbar a.sale:hover::after {
+  background-color: red; /* Underline hover color for special link */
+  width: 100%; /* Full underline width */
+}
+
+.all_cat {
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-bottom: none;
+  height: 2.6em;
+  width: 16em;
+  border-radius: 8px 0 0;
+}
+.sale {
+  margin-left: 13.2em;
+}
 
 @media screen and (max-width: 991px) and (min-width: 726px) {
   .container {
@@ -128,8 +189,9 @@ h4 {
   .logo_container {
     display: flex;
   }
-  s .menu {
+  .menu {
     display: flex !important;
+    cursor: pointer;
   }
   .search_bar input {
     font-size: 14px;
@@ -160,6 +222,7 @@ h4 {
   .menu,
   .delivery_xsscreen {
     display: flex !important;
+    cursor: pointer;
   }
   .delivery_xsscreen {
     margin: 0px !important;
