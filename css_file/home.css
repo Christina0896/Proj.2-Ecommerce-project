@@ -112,6 +112,7 @@ h4 {
 
 .all_cat {
   border: 1px solid rgba(229, 231, 235, 1);
+  color: var(--fontcolor1);
   border-bottom: none;
   height: 2.6em;
   width: 16em;
@@ -119,6 +120,72 @@ h4 {
 }
 .sale {
   margin-left: 13.2em;
+}
+.cat_list li {
+  border: 1px solid rgba(229, 231, 235, 1);
+  height: 3em;
+  width: 16rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+.hero_img img {
+  border-radius: 6px;
+  width: 100%;
+  height: 97%;
+}
+.text_hero {
+  color: rgba(57, 36, 95, 1);
+}
+.text_hero p {
+  color: rgba(22, 101, 52, 1);
+  font-weight: 500;
+  font-size: 13px;
+  width: 10em;
+  height: 1.8em;
+  padding-left: 10px;
+  background: linear-gradient(to right, rgba(22, 163, 74, 0.5), rgba(34, 197, 94, 0));
+  border-radius: 5px;
+}
+.text_hero h1 {
+  font-weight: bold;
+}
+
+.text_hero h6 {
+  color: var(--text-color-1);
+  font-weight: 400;
+}
+.shop_nowbtn {
+  color: var(--base-color);
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 8px;
+  width: 8em;
+  height: 3em;
+}
+.mini_text {
+  font-size: 11px;
+  color: var(--text-color-1);
+  font-weight: 400;
+}
+.new_price {
+  color: red;
+  font-weight: 700;
+}
+.old_price {
+  color: var(--fontcolor1);
+  font-size: 17px;
+}
+.dropdown_arrow {
+  margin-left: 6em;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+/* Features */
+.features span {
+  color: var(--fontcolor2);
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 991px) and (min-width: 726px) {
