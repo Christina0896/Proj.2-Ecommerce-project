@@ -22,6 +22,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: var(--fontcolor1);
 }
 ul {
   list-style: none;
@@ -31,10 +32,14 @@ select {
 }
 .dark_mode {
   --backgroundcolor1: #070b1d;
-  --fontcolor1: #030712;
+  --fontcolor1: white;
   --fontcolor2: #ffffff;
   --fontcolor3: #6b7280;
 }
+.dark_mode a {
+  color: var(--fontcolor1);
+}
+
 #theme_switch img {
   display: flex;
 }
