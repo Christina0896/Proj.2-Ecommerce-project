@@ -27,3 +27,148 @@
 .info_bar select {
   color: var(--fontcolor3);
 }
+/*Nav Bar*/
+.logo {
+  width: auto;
+  height: 35px;
+}
+
+h4 {
+  color: var(--fontcolor1);
+}
+.delivery,
+.account {
+  font-size: 13px;
+  color: var(--fontcolor1);
+}
+.sign_in {
+  font-size: 11px;
+  color: var(--fontcolor1);
+}
+.boldtext {
+  color: var(--fontcolor1);
+}
+
+/*Search bar*/
+.search_bar input {
+  background-color: rgba(243, 244, 246, 1);
+  border-radius: 8px 0 0 8px;
+}
+.search_bar button {
+  background-color: rgba(243, 244, 246, 1);
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #dddddd;
+}
+
+@media screen and (max-width: 991px) and (min-width: 726px) {
+  .container {
+    max-width: 100%;
+  }
+  .search_bar input {
+    font-size: 14px;
+  }
+  .promo_bar,
+  .time_left {
+    font-size: 10px;
+  }
+  .time_left span {
+    margin: 0px 5px;
+  }
+  .sign_in p {
+    display: none;
+  }
+  .delivery {
+    margin-bottom: 20px;
+  }
+  .delivery p {
+    display: none;
+  }
+  .sign_in {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 725px) and (min-width: 678px) {
+  .container {
+    max-width: 100%;
+  }
+  .logo,
+  .delivery p,
+  .sign_in p,
+  #theme_switch {
+    display: none;
+  }
+
+  .promo_bar,
+  .time_left {
+    font-size: 10px;
+  }
+  .info_bar {
+    font-size: 13px;
+  }
+  .time_left span {
+    margin: 0px 5px;
+  }
+  .sign_in,
+  .delivery {
+    margin-bottom: 1.8em;
+  }
+}
+@media screen and (max-width: 677px) and (min-width: 550px) {
+  .container {
+    max-width: 100%;
+  }
+  .logo,
+  .sign_in p,
+  .wishlist,
+  .promo_bar,
+  .info_bar,
+  .delivery_largescreen {
+    display: none !important;
+  }
+  .logo_container {
+    display: flex;
+  }
+  s .menu {
+    display: flex !important;
+  }
+  .search_bar input {
+    font-size: 14px;
+  }
+
+  .sign_in,
+  .delivery {
+    margin-bottom: 19px;
+  }
+}
+@media screen and (max-width: 549px) and (min-width: 378px) {
+  .container {
+    max-width: 100%;
+  }
+  .logo,
+  .sign_in p,
+  .wishlist,
+  .promo_bar,
+  .info_bar,
+  .delivery_largescreen {
+    display: none !important;
+  }
+
+  .logo_container {
+    display: flex;
+    margin: 1em;
+  }
+  .menu,
+  .delivery_xsscreen {
+    display: flex !important;
+  }
+  .delivery_xsscreen {
+    margin: 0px !important;
+    align-items: flex-end;
+  }
+  .search_bar input {
+    font-size: 14px;
+  }
+  .sign_in {
+    margin-bottom: 1.5em;
+  }
+}
