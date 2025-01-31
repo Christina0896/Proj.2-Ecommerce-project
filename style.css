@@ -5,6 +5,7 @@
   --fontcolor1: #030712;
   --fontcolor2: #6b7280;
   --fontcolor3: #6b7280;
+  --fontcolor4: #030712;
   --footer: #f3f4f6;
 }
 
@@ -29,9 +30,11 @@ select {
 }
 .dark_mode {
   --backgroundcolor1: #070b1d;
+  --backgroundcolor2: #634c9f;
   --fontcolor1: white;
   --fontcolor2: #ffffff;
   --fontcolor3: #6b7280;
+  --fontcolor4: #030712;
 }
 .dark_mode a {
   color: var(--fontcolor1);
