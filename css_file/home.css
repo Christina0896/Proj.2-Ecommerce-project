@@ -190,13 +190,33 @@ h4 {
   font-weight: 400;
   font-size: 13px;
 }
-/*Ad row 1 */
-.ad_row1 img {
-  height: 235px;
-  border-radius: 6px;
+/*General banner sets */
+.banner p {
+  font-size: 14px;
 }
-/*Card */
+.banner h4 {
+  font-weight: 700;
+}
 
+.banner button {
+  color: var(--fontcolor1);
+  background-color: var(--backgroundcolor1);
+  border: none;
+  border-radius: 999px;
+  width: 97px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.banner img {
+  border-radius: 10px;
+}
+/* big banner sets */
+.banner-02 h4 {
+  font-size: 19px;
+}
+
+/*View all*/
 .arrivals p {
   font-size: 13px;
   color: var(--fontcolor2);
@@ -211,6 +231,8 @@ h4 {
   font-size: 13px;
   margin-left: 52em;
 }
+/*Card */
+
 .product-container {
   border-radius: 5px 0 0 5px;
   width: 100%;
@@ -276,6 +298,32 @@ h4 {
   width: 190px;
   height: 34px;
   font-size: 13px;
+}
+/*Product row 02 */
+
+.productRow-02 .card-body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 13em;
+}
+.productRow-02 .card-body p {
+  margin-bottom: 1em;
+}
+.productRow-02 .card-price {
+  margin-bottom: 1em;
+  margin-right: 5em;
+}
+
+/*Banner row*/
+.banner-03 img {
+  width: 99%;
+}
+.banner-03 .banner-body {
+  margin-top: 3em !important;
+}
+.banner-03 .banner-body h4 {
+  font-size: 28px;
 }
 
 @media screen and (max-width: 991px) and (min-width: 726px) {

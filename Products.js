@@ -18,7 +18,15 @@ const products = [
   new Product(3, 'Free range Eggs 12unit', './assets/image/product2.png', 2.45, 4.13, 41, []),
   new Product(4, 'Cantaloupe Melon Fresh Organic Cut', './assets/image/product4.png', 1.25, 2.98, 59, ['organic']),
   new Product(5, 'Marthie & Claudine', './assets/image/product3.png', 14.12, 17.12, 18, []),
-  new Product(6, "Kellogg's Corn Flakes Cereal – 18 oz Box", './assets/images/corn-flakes.png', 3.99, 5.49, 27, []),
+  new Product(
+    6,
+    'California Pizza Kitchen Margherita, Crispy Thin Crus…',
+    './assets/image/product6.png',
+    3.99,
+    5.49,
+    27,
+    ['cold sale']
+  ),
   new Product(7, 'Pepsi Soft Drink – 12 fl oz Can (6-Pack)', './assets/images/pepsi.png', 4.99, 6.99, 29, []),
   new Product(8, 'Organic Bananas – 1 Bunch', './assets/images/bananas.png', 1.29, 1.79, 28, 'Fruits', ['organic']),
   new Product(
@@ -35,15 +43,15 @@ const products = [
 
 // Export the products array
 // Function to render products
-const renderProducts = (products, cardIds) => {
-  const productContainer = document.querySelector('.product-container');
-  productContainer.innerHTML = ''; // Clear any existing content
+const renderProducts = (products, cardIds, containerSelector, columnClass) => {
+  const container = document.querySelector(containerSelector);
+  container.innerHTML = ''; // Clear any existing content
 
   cardIds.forEach((id) => {
     const product = products.find((product) => product.id === id);
     if (product) {
       const productCard = document.createElement('div');
-      productCard.classList.add('col-md-2');
+      productCard.classList.add(columnClass);
 
       productCard.innerHTML = `
          
@@ -65,13 +73,17 @@ const renderProducts = (products, cardIds) => {
           
       `;
 
-      productContainer.appendChild(productCard);
+      container.appendChild(productCard);
     }
   });
 };
 
 // Use the renderProducts function
 document.addEventListener('DOMContentLoaded', () => {
-  const productIdsToDisplay = [1, 2, 4, 3, 5, 1]; // Example: Display products with IDs 1 and 2
-  renderProducts(products, productIdsToDisplay);
+  renderProducts(products, [1, 2, 3, 4, 5, 6], '.productRow-01', 'col-2');
+  renderProducts(products, [1, 2, 3, 4, 5, 6], '.productRow-02', 'col-4');
+  renderProducts(products, [1, 2], '.productRow-03', 'col-6');
+  renderProducts(products, [1, 2], '.productRow-04', 'col-6');
+  renderProducts(products, [1, 2], '.productRow-05', 'col-6');
+  renderProducts(products, [1, 2], '.productRow-06', 'col-6');
 });
