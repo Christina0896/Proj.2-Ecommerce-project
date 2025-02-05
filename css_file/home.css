@@ -333,6 +333,16 @@ h4 {
 .banner-promo img {
   width: 1260px;
 }
+footer {
+  background-color: var(--footer);
+}
+.newsletter {
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
+.newsletter p {
+  font-size: 11px;
+}
+
 @media screen and (max-width: 991px) and (min-width: 726px) {
   .container {
     max-width: 100%;
