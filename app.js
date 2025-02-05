@@ -50,3 +50,5 @@ themeSwitch.addEventListener('click', () => {
     localStorage.setItem('dark_mode', 'inactive');
   }
 });
+
+//Add products
