@@ -342,7 +342,40 @@ footer {
 .newsletter p {
   font-size: 11px;
 }
+/*Footer*/
 
+footer ul li,
+footer p {
+  font-size: 13px;
+  color: var(--fontcolor2);
+  margin-bottom: 6px;
+}
+footer span {
+  color: var(--fontcolor1);
+  font-size: 20px;
+  font-weight: 700;
+}
+.newsletter-input {
+  flex-wrap: wrap;
+}
+.newsletter-input input {
+  width: 343px;
+  background-color: white;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #d1d5db;
+}
+.newsletter-input button {
+  color: var(--backgroundcolor1);
+
+  background-color: var(--backgroundcolor2);
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+  width: 4em;
+  height: 2.6em;
+}
+.footer-list {
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
 @media screen and (max-width: 991px) and (min-width: 726px) {
   .container {
     max-width: 100%;
