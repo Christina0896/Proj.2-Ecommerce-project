@@ -2,7 +2,7 @@
 .promo_bar {
   background-color: var(--backgroundcolor2);
   color: white;
-  height: 31px;
+  height: 2em;
   font-size: 15px;
 }
 
@@ -14,6 +14,7 @@
   font-weight: 200;
   margin: 5px;
 }
+
 /*Info bar*/
 .info_bar {
   font-size: 14px;
@@ -35,7 +36,7 @@
   height: 35px;
 }
 
-h4 {
+.logo_container h4 {
   color: var(--fontcolor1);
 }
 .delivery,
@@ -66,10 +67,6 @@ h4 {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
 
-.cat_list li {
-  color: var(--fontcolor1);
-  font-weight: 400;
-}
 .home_navbar a {
   position: relative;
   color: var(--fontcolor1);
@@ -123,7 +120,9 @@ h4 {
 .sale {
   margin-left: 13.2em;
 }
+
 .cat_list li {
+  color: var(--fontcolor1);
   border: 1px solid rgba(229, 231, 235, 1);
   height: 3em;
   width: 16rem;
@@ -131,15 +130,16 @@ h4 {
   font-weight: 500;
 }
 /*Hero section*/
-.hero_img img {
+.hero-slider img {
   border-radius: 6px;
   width: 100%;
-  height: 96%;
+  height: 92%;
 }
-.text_hero {
+.hero-slider_body {
   color: rgba(57, 36, 95, 1);
+  max-width: 20%;
 }
-.text_hero p {
+.discount {
   color: rgba(22, 101, 52, 1);
   font-weight: 500;
   font-size: 13px;
@@ -149,11 +149,12 @@ h4 {
   background: linear-gradient(to right, rgba(22, 163, 74, 0.5), rgba(34, 197, 94, 0));
   border-radius: 5px;
 }
-.text_hero h1 {
+.hero-slider_body h2 {
   font-weight: bold;
+  font-size: 35px;
 }
 
-.text_hero h6 {
+.hero-slider_body h6 {
   color: var(--text-color-1);
   font-weight: 400;
 }
@@ -179,6 +180,7 @@ h4 {
   font-size: 17px;
 }
 /* Features */
+
 .features {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
@@ -191,6 +193,7 @@ h4 {
   font-size: 13px;
 }
 /*General banner sets */
+
 .banner p {
   font-size: 14px;
 }
@@ -210,11 +213,27 @@ h4 {
 .banner img {
   border-radius: 10px;
 }
-/* big banner sets */
+/*Banner row*/
 .banner-02 h4 {
   font-size: 19px;
 }
 
+.banner-01 img,
+.banner-02 img,
+.banner-03 img {
+  width: 99%;
+}
+.banner-03 .banner-body {
+  margin-top: 3em !important;
+}
+.banner-03 .banner-body h4 {
+  font-size: 28px;
+}
+
+.banner-promo img {
+  width: 100%; /* Ensures the image scales to the width of its container */
+  max-width: 1260px; /* Optional: Set a maximum width for larger screens */
+}
 /*View all*/
 
 .arrivals p {
@@ -308,7 +327,6 @@ h4 {
 /*Product row 02 */
 .productRow-02 .card-body {
   position: absolute;
-  display: flex;
   flex-direction: column;
   left: 13em;
 }
@@ -319,20 +337,7 @@ h4 {
   margin-bottom: 1em;
   margin-right: 5em;
 }
-
-/*Banner 03 row*/
-.banner-03 img {
-  width: 99%;
-}
-.banner-03 .banner-body {
-  margin-top: 3em !important;
-}
-.banner-03 .banner-body h4 {
-  font-size: 28px;
-}
-.banner-promo img {
-  width: 1260px;
-}
+/*Footer*/
 footer {
   background-color: var(--footer);
 }
@@ -342,18 +347,17 @@ footer {
 .newsletter p {
   font-size: 11px;
 }
-/*Footer*/
 
 footer ul li,
 footer p {
   font-size: 13px;
-  color: var(--fontcolor2);
+  color: var(--fontcolor3);
   margin-bottom: 6px;
 }
 footer span {
-  color: var(--fontcolor1);
-  font-size: 20px;
-  font-weight: 700;
+  color: var(--fontcolor4);
+  font-size: 16px;
+  font-weight: 600;
 }
 .newsletter-input {
   flex-wrap: wrap;
@@ -376,7 +380,7 @@ footer span {
 .footer-list {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
-@media screen and (max-width: 991px) and (min-width: 726px) {
+@media screen and (max-width: 991px) and (min-width: 743px) {
   .container {
     max-width: 100%;
   }
@@ -385,7 +389,7 @@ footer span {
   }
   .promo_bar,
   .time_left {
-    font-size: 10px;
+    font-size: 12px;
   }
   .time_left span {
     margin: 0px 5px;
@@ -403,90 +407,191 @@ footer span {
     margin-bottom: 17px;
   }
 }
-@media screen and (max-width: 725px) and (min-width: 678px) {
+@media screen and (max-width: 742px) and (min-width: 360px) {
   .container {
-    max-width: 100%;
+    max-width: 100% !important;
   }
-  .logo,
-  .delivery p,
+  .info_bar,
+  .home_bar,
   .sign_in p,
-  #theme_switch {
+  .delivery p {
+    display: none !important;
+  }
+  .promo_bar {
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+  .promo_bar p {
+    margin: 0;
+  }
+  .time {
+    align-items: center;
+  }
+  /*Menu*/
+  .menu-btn {
+    display: flex !important;
+    cursor: pointer;
+  }
+  .cat_menu {
     display: none;
+    position: absolute;
+    top: 9.5em;
+    background-color: white;
+    z-index: 1;
+    width: 50%;
   }
 
-  .promo_bar,
-  .time_left {
-    font-size: 10px;
+  .cat_menu.active {
+    display: block;
   }
-  .info_bar {
-    font-size: 13px;
+  .cat_list li {
+    display: block;
+    background-color: white;
+    width: 94.5vw !important;
   }
-  .time_left span {
-    margin: 0px 5px;
-  }
-  .sign_in,
   .delivery {
-    margin-bottom: 1.8em;
-  }
-}
-@media screen and (max-width: 677px) and (min-width: 550px) {
-  .container {
-    max-width: 100%;
-  }
-  .logo,
-  .sign_in p,
-  .wishlist,
-  .promo_bar,
-  .info_bar,
-  .delivery_largescreen {
-    display: none !important;
-  }
-  .logo_container {
-    display: flex;
-  }
-  .menu {
-    display: flex !important;
-    cursor: pointer;
-  }
-  .search_bar input {
-    font-size: 14px;
-  }
-
-  .sign_in,
-  .delivery {
-    margin-bottom: 19px;
-  }
-}
-@media screen and (max-width: 549px) and (min-width: 378px) {
-  .container {
-    max-width: 100%;
-  }
-  .logo,
-  .sign_in p,
-  .wishlist,
-  .promo_bar,
-  .info_bar,
-  .delivery_largescreen {
-    display: none !important;
-  }
-
-  .logo_container {
-    display: flex;
-    margin: 1em;
-  }
-  .menu,
-  .delivery_xsscreen {
-    display: flex !important;
-    cursor: pointer;
-  }
-  .delivery_xsscreen {
-    margin: 0px !important;
-    align-items: flex-end;
-  }
-  .search_bar input {
-    font-size: 14px;
+    position: absolute;
+    right: 9em;
+    bottom: 0.2em;
   }
   .sign_in {
-    margin-bottom: 1.5em;
+    position: absolute;
+    right: 6.8em;
+    bottom: 0em;
+  }
+  .wishlist {
+    position: absolute;
+    right: 2.8em;
+    bottom: 40m;
+  }
+  .cart {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.3em;
+  }
+  .search_bar {
+    position: absolute;
+    display: flex;
+    top: 3em;
+    max-width: 650px !important;
+  }
+  /* Hero */
+  .hero-slider {
+    display: block;
+  }
+  .hero-slider img {
+    display: flex;
+    margin: 3.5em 0 0em 0 !important;
+    object-fit: cover;
+    max-width: 690px !important;
+    height: 350px;
+  }
+
+  .hero-slider_body {
+    max-width: 60%;
+    margin: 0 0 0 1em !important;
+  }
+  .hero-slider_body h2 {
+    font-size: 20px;
+  }
+  .hero-slider_body h4,
+  .hero-slider_body span,
+  .hero-slider_body p {
+    font-size: 13px;
+  }
+
+  .hero-slider_body button {
+    font-size: 10px;
+  }
+  .mini_text {
+    font-size: 9px !important;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features {
+    flex-wrap: wrap;
+  }
+  .arrivals div {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+
+  .arrivalsbtn {
+    margin: 0 !important;
+    font-size: 10px;
+    width: 15%;
+  }
+  /*Product*/
+  .productRow-01,
+  .productRow-02 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .card-button {
+    width: 95%;
+    font-size: 12px;
+  }
+  .plus {
+    margin: 10px !important;
+  }
+  .productRow-02,
+  .productRow-02 .card-body {
+    position: static;
+    margin-bottom: 2em;
+  }
+  .productRow-03 {
+    margin-bottom: 4.5em;
+  }
+  .productRow-04 {
+    margin-bottom: 4.5em;
+  }
+  .productRow-05 {
+    margin-bottom: 4.5em;
+  }
+  .productRow-06 {
+    margin-bottom: 4.5em;
+  }
+  .banner-02 img {
+    max-width: 695px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .banner-04 img {
+    max-width: 795px !important;
+    height: 320px;
+    object-fit: cover;
+  }
+  .banner-03 img {
+    margin-bottom: 1em !important;
+  }
+  .banner-03 .banner-body {
+    margin: 1em !important;
+  }
+  .banner-01 .banner-body p {
+    margin: 0 !important;
+  }
+  .banner-01 .banner-body h4 {
+    font-size: 16px;
+  }
+  .banner-01 .banner-body button {
+    font-size: 10px;
+    width: 80px;
+  }
+  .banner-03 .banner-body > h4 {
+    font-size: 15px !important;
+  }
+  .banner-row {
+    flex-direction: column;
+  }
+
+  .banner-promo img {
+    object-fit: fill;
   }
 }
