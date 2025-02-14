@@ -76,7 +76,7 @@
       </div>
 
       <!--Navigation bar- The logo, search bar,account ...-->
-      <nav class="navbar p-0">
+      <nav class="navbar nav-container p-0">
         <!-- Logo -->
         <div class="d-flex align-items-center me-4 logo_container">
           <img class="menu-btn d-none" src="./assets/icon/menu.svg" alt="menu" />
@@ -107,14 +107,14 @@
 
         <!--Search bar-->
 
-        <div class="search_bar d-flex flex-grow-1 mx-3">
+        <form class="search_bar input-group d-flex flex-grow-1 mx-3">
           <input
             class="form-control p-0"
             type="search"
             placeholder="   Search for products, categories or brands..."
             aria-label="Search"
           />
-          <button class="p-2 m-0">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="20px"
@@ -127,7 +127,7 @@
               />
             </svg>
           </button>
-        </div>
+        </form>
 
         <!--Nav links right side-->
 
@@ -663,9 +663,9 @@
 
         <!--Hero slider -->
         <div class="hero-slider d-flex align-items-center">
-          <div class="hero-slider_body position-absolute m-5 ps-3">
+          <div class="hero-slider_body position-absolute m-5 ps-5">
             <p class="discount">Weekend discount</p>
-            <h2>Get the best quality products at the lowest prices</h2>
+            <h1>Get the best quality products at the lowest prices</h1>
             <p>We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
             <div class="d-flex">
               <button class="shop_nowbtn">Shop Now</button>
@@ -1055,7 +1055,7 @@
       </div>
       <!--Products row 1 -->
       <div class="products">
-        <div class="row productRow-01"><!--the  Products will show here--></div>
+        <div class="productRow-01"><!--the  Products will show here--></div>
       </div>
 
       <!--Banner 02-->
@@ -1071,8 +1071,8 @@
         <button class="arrivalsbtn">View all -></button>
       </div>
       <!--Products row 2 -->
-      <div class="products">
-        <div class="row productRow-02"><!--the  Products will show here--></div>
+      <div class="row products">
+        <div class="productRow-02"><!--the  Products will show here--></div>
       </div>
 
       <!--Banner 03-->
@@ -1090,7 +1090,7 @@
       <div class="d-flex banner-row">
         <!--Products row 3 -->
         <div class="products">
-          <div class="row productRow-03 me-2"><!--the  Products will show here--></div>
+          <div class="productRow-03 me-5"><!--the  Products will show here--></div>
         </div>
         <!--Banner 04-->
         <div class="banner">
@@ -1098,19 +1098,19 @@
         </div>
         <!--Products row 4 -->
         <div class="products">
-          <div class="row productRow-04 ms-2"><!--the  Products will show here--></div>
+          <div class="productRow-04 ms-5"><!--the  Products will show here--></div>
         </div>
       </div>
       <div class="d-flex banner-row">
         <!--Products row 5 -->
-        <div class="row productRow-05 me-2"></div>
+        <div class="productRow-05 me-5"></div>
         <!--Banner 04-->
         <div class="banner">
-          <div class="row banner-05"><!--the  banner will show here--></div>
+          <div class="banner-05"><!--the  banner will show here--></div>
         </div>
         <!--Products row 6 -->
         <div class="products">
-          <div class="row productRow-06 ms-2"><!--the  Products will show here--></div>
+          <div class="productRow-06 ms-5"><!--the  Products will show here--></div>
         </div>
       </div>
       <div class="banner-promo mt-3 mb-5 pb-5">
@@ -1121,16 +1121,18 @@
     <footer class="mt-5">
       <div class="container">
         <div class="row mt-5 d-flex newsletter">
-          <div class="col-8 mt-5 mb-5">
+          <div class="col-7 mt-5 mb-5 newsletter-offs">
             <h5>Join our newsletter for €10 offs</h5>
             <p>
               Register now to get latest updates on promotions & <br />
               coupons.Don’t worry, we not spam!
             </p>
           </div>
-          <div class="col d-flex mt-5 align-items-center newsletter-input">
-            <input class="form-control" type="text" placeholder="Enter your email address" />
-            <button class="">SEND</button>
+          <div class="col">
+            <form class="d-flex mt-5 input-group align-items-center newsletter-input">
+              <input class="form-control" type="text" placeholder="Enter your email address" />
+              <button class="btn btn-outline-secondary">SEND</button>
+            </form>
             <p>By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a></p>
           </div>
         </div>
