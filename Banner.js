@@ -97,11 +97,11 @@ const renderBanner = (banners, bannerIds, containerSelector, columnClass) => {
 
       bannerCard.innerHTML = `
              
-                <div class="banner-body position-absolute m-4 ">
-                 <p class="text-danger">${banner.paragraph1}</p>
+                <div class="banner-body position-absolute m-3 ">
+                  <p class="text-danger">${banner.paragraph1}</p>
                   <h4>${banner.text} </h4>
                   <p>${banner.paragraph2}</p>
-                 <button class=''>Shop now -></button>
+                  <button class=''>Shop now -></button>
                 </div>
                 <img class="" src="${banner.image}" alt="banner image" />
              
@@ -114,9 +114,9 @@ const renderBanner = (banners, bannerIds, containerSelector, columnClass) => {
 document.addEventListener('DOMContentLoaded', () => {
   //banner ids per location
 
-  renderBanner(banners, [1, 2, 3], '.banner-01', 'col-4');
-  renderBanner(banners, [4, 5, 6, 7], '.banner-02', 'col-3');
-  renderBanner(banners, [8, 9], '.banner-03', 'col-6');
+  renderBanner(banners, [1, 2, 3], '.banner-01', 'col-md-4');
+  renderBanner(banners, [4, 5, 6, 7], '.banner-02', 'col-md-3');
+  renderBanner(banners, [8, 9], '.banner-03', 'col-md-6');
   renderBanner(banners, [10], '.banner-04', 'col');
   renderBanner(banners, [11], '.banner-05', 'col');
 });

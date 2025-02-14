@@ -51,4 +51,22 @@ themeSwitch.addEventListener('click', () => {
   }
 });
 
-//Add products
+//icon menu for small screens
+// Select the hamburger menu button and menu container
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.cat_menu');
+
+  if (menuBtn && menu) {
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('active'); // Toggle menu visibility
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        menu.classList.remove('active');
+      }
+    });
+  }
+});
