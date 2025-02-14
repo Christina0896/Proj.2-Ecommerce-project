@@ -745,16 +745,18 @@ footer span {
     margin-bottom: 1em !important;
   }
   .banner-03 .banner-body {
-    margin: 1em !important;
+    margin: 0.8em !important;
   }
   .banner-03 .banner-body p {
     font-size: 11px;
+    margin-bottom: 0.5em;
   }
   .banner-03 .banner-body > h4 {
     font-size: 15px;
   }
   .banner-03 .banner-body button {
-    font-size: 11px;
+    font-size: 10px;
+    width: 45%;
   }
   /*Banner row*/
   .banner-row {
