@@ -114,6 +114,7 @@
   height: 2.6em;
   width: 16em;
   border-radius: 8px 0 0;
+  cursor: pointer;
 }
 .sale {
   margin-left: 13.2em;
@@ -132,6 +133,7 @@
   border-radius: 6px;
   width: 100%;
   height: 92%;
+  object-fit: cover;
 }
 .hero-slider_body {
   color: rgba(57, 36, 95, 1);
@@ -189,7 +191,9 @@
   font-size: 13px;
 }
 /*General banner sets */
-
+.banner img {
+  object-fit: cover;
+}
 .banner p {
   font-size: 14px;
 }
@@ -208,6 +212,7 @@
 }
 .banner img {
   border-radius: 10px;
+  object-fit: cover;
 }
 /*Banner row*/
 .banner-02 h4 {
@@ -247,13 +252,6 @@
   margin-left: 45em;
 }
 /*general Card sets*/
-.productRow-03 .card-img,
-.productRow-04 .card-img,
-.productRow-05 .card-img,
-.productRow-06 .card-img {
-  margin-top: 50px;
-  height: 200px;
-}
 
 .card {
   width: 13em;
@@ -436,7 +434,13 @@ footer span {
   .promo_bar {
     height: auto;
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .promo_bar p {
+    margin: 0 !important;
+  }
+  .time span {
+    margin: 0 5px 0 5px;
   }
   .info_bar,
   .nav-container {
@@ -451,7 +455,6 @@ footer span {
     flex-wrap: nowrap;
   }
   .all_cat {
-    width: 12%;
     border: none;
     margin: 0 !important;
     font-size: 14px;
@@ -461,7 +464,8 @@ footer span {
   }
   .home_navbar {
     flex-direction: row;
-    gap: 2.5em !important;
+    white-space: nowrap;
+    gap: 2em !important;
     margin: 0 !important;
   }
   .home_navbar a {
@@ -469,18 +473,81 @@ footer span {
     margin: 0 !important;
     font-size: 14px;
   }
+  .home_navbar a:after {
+    top: 2em;
+  }
+  /*Hero slider*/
+  .hero-slider img {
+    margin: 0 !important;
+  }
   .hero-slider_body {
     max-width: 55%;
-    padding: 2em !important;
+    padding: 0em !important;
   }
-  .productRow-01,
-  .productRow-02 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
-    align-items: center;
-    gap: 15px;
+  .hero-slider_body p {
+    font-size: 13px;
+  }
+  .hero-slider button {
+    font-size: 13px;
+  }
+  .features {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*Banner*/
+  .banner-01 img {
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .banner-01 .banner-body h4 {
+    font-size: 18px;
+  }
+  /*View all*/
+  .arrivals {
+    margin: 0 !important;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    margin-top: 1em;
+  }
+  /*banner row*/
+  .banner-02 .banner-body h4 {
+    display: flex;
+    width: 65%;
+    font-size: 16px;
     flex-wrap: wrap;
-    width: 100%;
+  }
+  .banner-02 .banner-body p {
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+  }
+  .banner-02 img {
+    height: 340px;
+    margin-bottom: 1em;
+  }
+  .banner-03 img {
+    height: 220px;
+    margin-bottom: 1em;
+  }
+  .banner-03 .banner-body {
+    margin: 1em !important;
+  }
+  /*Product*/
+  .productRow-01 {
+    margin-left: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+  }
+  .productRow-02 {
+    margin-left: 1.5em;
+  }
+  .productRow-02,
+  .productRow-02 .card,
+  .productRow-02 .card-body {
+    position: static;
+    margin-bottom: 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -563,9 +630,7 @@ footer span {
     margin-bottom: 1em;
   }
   .hero-slider img {
-    display: flex;
     margin: 3.5em 0 0em 0em !important;
-    object-fit: cover;
     max-width: 690px !important;
     height: 330px;
   }
@@ -629,10 +694,9 @@ footer span {
   .productRow-02 .card-body {
     position: static;
     margin-bottom: 2em;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .productRow-02 {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  }
+
   .productRow-06 {
     margin: 1em !important;
   }
@@ -675,11 +739,9 @@ footer span {
   .banner-02 img {
     max-width: 695px;
     height: 320px;
-    object-fit: cover;
   }
   /*Banner 03*/
   .banner-03 img {
-    object-fit: cover;
     margin-bottom: 1em !important;
   }
   .banner-03 .banner-body {
@@ -713,7 +775,6 @@ footer span {
   .banner-05 img {
     width: 100%;
     height: 320px;
-    object-fit: cover;
   }
   /*Footer*/
   .newsletter {
@@ -730,5 +791,6 @@ footer span {
     display: flex;
     flex-wrap: wrap !important;
     white-space: nowrap;
+    flex-direction: column;
   }
 }

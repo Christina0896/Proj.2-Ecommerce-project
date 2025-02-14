@@ -98,10 +98,10 @@ const renderBanner = (banners, bannerIds, containerSelector, columnClass) => {
       bannerCard.innerHTML = `
              
                 <div class="banner-body position-absolute m-3 ">
-                 <p class="text-danger">${banner.paragraph1}</p>
+                  <p class="text-danger">${banner.paragraph1}</p>
                   <h4>${banner.text} </h4>
                   <p>${banner.paragraph2}</p>
-                 <button class=''>Shop now -></button>
+                  <button class=''>Shop now -></button>
                 </div>
                 <img class="" src="${banner.image}" alt="banner image" />
              
