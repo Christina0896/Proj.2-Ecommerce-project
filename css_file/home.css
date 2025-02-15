@@ -2,58 +2,65 @@
 .promo_bar {
   background-color: var(--backgroundcolor2);
   color: white;
-  height: 2em;
-  font-size: 15px;
+  min-height: 2em;
+  font-size: 0.9375rem; /* 15px */
+}
+.promo_bar p {
+  margin-bottom: 0;
 }
 
 .time_left p {
   font-weight: 700;
 }
 .time_left span {
-  font-size: 10px;
+  font-size: 0.625rem; /* 10px */
   font-weight: 200;
   margin: 5px;
 }
 
 /*Info bar*/
 .info_bar {
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   font-weight: 500;
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
 .info_bar,
-.info_bar a {
+.info_bar a,
+.info_bar select {
   color: var(--fontcolor2);
+}
+.info_bar a:hover {
+  color: var(--fontcolor1);
 }
 .info_bar select {
   background-color: var(--backgroundcolor1);
-  color: var(--fontcolor1);
 }
 
 /*Nav Bar*/
 .logo {
   width: auto;
   height: 35px;
+  cursor: pointer;
 }
 
 .delivery,
 .account {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--fontcolor1);
 }
 .sign_in {
-  font-size: 11px;
+  font-size: 0.75rem;
   color: var(--fontcolor1);
 }
 .boldtext,
 .logo_container h4 {
   color: var(--fontcolor1);
+  cursor: pointer;
 }
 
 /*Search bar*/
-
 .search_bar {
-  width: 50%;
+  max-width: 800px;
 }
 .search_bar input {
   background-color: rgba(243, 244, 246, 1);
@@ -420,6 +427,44 @@ footer span {
     max-width: 55%;
     padding: 2em !important;
   }
+  /*View all*/
+  .arrivals {
+    margin: 1em !important;
+    justify-content: space-between;
+  }
+  .arrivals div p {
+    font-size: 12px;
+  }
+
+  .arrivalsbtn {
+    margin: 0 !important;
+    font-size: 14px;
+  }
+
+  /*Banner row*/
+  .banner-01 img {
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .banner-02 .banner-body h4 {
+    font-size: 13px;
+  }
+  .banner-02 .banner-body p {
+    font-size: 12px;
+  }
+  .banner-03 img {
+    height: 220px;
+    margin-bottom: 1em;
+  }
+  .banner-03 .banner-body {
+    margin: 1em !important;
+  }
+
+  /*Product row */
+  .productRow-01 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 743px) {
   .container {
@@ -428,7 +473,8 @@ footer span {
   .delivery p,
   .sign_in p,
   .cat_list,
-  .all_cat svg {
+  .all_cat svg,
+  .banner-promo {
     display: none !important;
   }
   .promo_bar {
@@ -494,7 +540,25 @@ footer span {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
-  /*Banner*/
+
+  /*View all*/
+  .arrivals {
+    margin: 0 !important;
+    justify-content: space-between;
+  }
+  .arrivals div p {
+    font-size: 9px;
+  }
+
+  .arrivals div {
+    margin: 0 !important;
+  }
+
+  .arrivalsbtn {
+    margin: 0 !important;
+    font-size: 11px;
+  }
+  /*banner row*/
   .banner-01 img {
     height: 220px;
     margin-bottom: 10px;
@@ -502,28 +566,21 @@ footer span {
   .banner-01 .banner-body h4 {
     font-size: 18px;
   }
-  /*View all*/
-  .arrivals {
-    margin: 0 !important;
-    justify-content: space-evenly;
-    white-space: nowrap;
-    margin-top: 1em;
-  }
-  /*banner row*/
-  .banner-02 .banner-body h4 {
+  .banner-02 .banner-body {
     display: flex;
-    width: 65%;
-    font-size: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 20%;
+  }
+  .banner-02 .banner-body h4 {
+    font-size: 12px;
   }
   .banner-02 .banner-body p {
-    display: flex;
-    width: 65%;
     flex-wrap: wrap;
   }
   .banner-02 img {
     height: 340px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
   .banner-03 img {
     height: 220px;
@@ -532,6 +589,16 @@ footer span {
   .banner-03 .banner-body {
     margin: 1em !important;
   }
+  .banner-row {
+    flex-direction: column;
+  }
+  .banner-04 img,
+  .banner-05 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
   /*Product*/
   .productRow-01 {
     margin-left: 1.5em;
@@ -548,6 +615,13 @@ footer span {
     position: static;
     margin-bottom: 1em;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .productRow-03 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .productRow-05 {
+    margin-left: 2em !important;
   }
 }
 
@@ -570,13 +644,10 @@ footer span {
     position: absolute;
   }
   .promo_bar {
-    height: auto;
     flex-wrap: wrap;
     font-size: 11px;
   }
-  .promo_bar p {
-    margin: 0;
-  }
+
   .time {
     align-items: center;
   }
