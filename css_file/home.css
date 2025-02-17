@@ -60,18 +60,22 @@
 
 /*Search bar*/
 .search_bar {
-  max-width: 800px;
+  width: 50%;
 }
 .search_bar input {
   background-color: rgba(243, 244, 246, 1);
   border-radius: 8px;
+  border: 1px solid rgba(229, 231, 235, 1);
+}
+.search_bar button {
+  background-color: rgba(243, 244, 246, 1);
+  border: 1px solid rgba(229, 231, 235, 1);
 }
 
 /*Side bar*/
 .home_bar {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
-
 .home_navbar a {
   position: relative;
   color: var(--fontcolor1);
@@ -120,7 +124,7 @@
   border-bottom: none;
   height: 2.6em;
   width: 16em;
-  border-radius: 8px 0 0;
+  border-radius: 8px 8px 0px 0px;
   cursor: pointer;
 }
 .sale {
@@ -132,8 +136,12 @@
   border: 1px solid rgba(229, 231, 235, 1);
   height: 3em;
   width: 16rem;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   font-weight: 500;
+  cursor: pointer;
+}
+.cat_list li:hover {
+  background-color: rgba(243, 244, 246, 1);
 }
 /*Hero section*/
 .hero-slider img {
@@ -149,7 +157,7 @@
 .discount {
   color: rgba(22, 101, 52, 1);
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   width: 10em;
   height: 1.8em;
   padding-left: 10px;
@@ -172,7 +180,7 @@
   height: 3em;
 }
 .mini_text {
-  font-size: 11px;
+  font-size: 0.6875rem; /* 11px */
   color: var(--text-color-1);
   font-weight: 400;
 }
@@ -182,7 +190,7 @@
 }
 .old_price {
   color: var(--fontcolor4);
-  font-size: 17px;
+  font-size: 1.0625rem; /* 17px */
 }
 /* Features */
 
@@ -706,9 +714,9 @@ footer span {
     height: 330px;
   }
   .hero-slider_body {
+    position: relative;
     max-width: 75%;
-    margin: 2em 0 0 0 !important;
-    padding: 2em !important;
+    margin: 1.5em 0 0 0 !important;
   }
   .hero-slider_body h1 {
     font-size: 20px;
