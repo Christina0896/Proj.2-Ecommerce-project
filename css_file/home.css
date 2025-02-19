@@ -18,7 +18,7 @@
   margin: 5px;
 }
 
-/*Info bar*/
+/* Info Bar Styles */
 .info_bar {
   font-size: 0.875rem; /* 14px */
   font-weight: 500;
@@ -34,9 +34,10 @@
 }
 .info_bar select {
   background-color: var(--backgroundcolor1);
+  cursor: pointer;
 }
 
-/*Nav Bar*/
+/* Navigation Bar */
 .logo {
   width: auto;
   height: 35px;
@@ -62,14 +63,19 @@
 .search_bar {
   width: 50%;
 }
+
 .search_bar input {
   background-color: rgba(243, 244, 246, 1);
-  border-radius: 8px;
+  border-radius: 8px !important;
   border: 1px solid rgba(229, 231, 235, 1);
 }
+
 .search_bar button {
-  background-color: rgba(243, 244, 246, 1);
-  border: 1px solid rgba(229, 231, 235, 1);
+  background: none;
+  border: none;
+  right: 1%;
+  top: 15%;
+  z-index: 10;
 }
 
 /*Side bar*/
@@ -152,7 +158,7 @@
 }
 .hero-slider_body {
   color: rgba(57, 36, 95, 1);
-  max-width: 30%;
+  max-width: 45%;
 }
 .discount {
   color: rgba(22, 101, 52, 1);
@@ -197,17 +203,22 @@
 .features {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
+.feature-item img {
+  width: 15%;
+}
 .features h6 {
   color: var(--fontcolor1);
 }
-.features span {
+.features p {
   color: var(--fontcolor2);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 13px;
+  white-space: nowrap;
 }
 /*General banner sets */
 .banner img {
   object-fit: cover;
+  border-radius: 10px;
 }
 .banner p {
   font-size: 14px;
@@ -225,20 +236,16 @@
   font-size: 13px;
   font-weight: 700;
 }
-.banner img {
-  border-radius: 10px;
-  object-fit: cover;
-}
 /*Banner row*/
-.banner-02 h4 {
-  font-size: 19px;
-}
-
 .banner-01 img,
 .banner-02 img,
 .banner-03 img {
   width: 99%;
 }
+.banner-02 h4 {
+  font-size: 19px;
+}
+
 .banner-03 .banner-body {
   margin-top: 3em !important;
 }
@@ -340,15 +347,22 @@
 }
 /*Product row 02 */
 .productRow-02 {
+  background-color: var(--backgroundcolor1);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .productRow-02 .card-body {
+  background-color: var(--backgroundcolor1);
   position: absolute;
   flex-direction: column;
   left: 13em;
 }
-
+.productRow-02 .product-card {
+  background-color: white;
+}
+.productRow-02 .card-body {
+  background-color: white;
+}
 .productRow-02 .card-body p {
   margin-bottom: 1em;
 }
