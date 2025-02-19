@@ -684,7 +684,6 @@ footer span {
     top: 9.5em;
     background-color: white;
     z-index: 1;
-    width: 50%;
   }
 
   .cat_menu.active {
@@ -696,24 +695,23 @@ footer span {
     width: 94.5vw !important;
   }
   .delivery {
-    right: 9em;
-    bottom: 0.2em;
+    right: 9.5em;
+    top: 0.4em;
   }
-
   .sign_in {
-    right: 6.8em;
-    bottom: 0em;
+    right: 6.5em;
+    top: 0em;
   }
   .wishlist {
     right: 2.8em;
-    bottom: 40m;
+    bottom: 2.9em;
   }
   .cart {
     right: 0.5em;
-    bottom: 0.3em;
+    bottom: 3em;
   }
   .search_bar {
-    top: 3em;
+    top: 0.5em;
     margin: 0 !important;
     width: 100% !important;
   }
@@ -723,12 +721,11 @@ footer span {
     margin-bottom: 1em;
   }
   .hero-slider img {
-    margin: 3.5em 0 0em 0em !important;
+    margin: 2em 0 0em 0em !important;
     max-width: 690px !important;
     height: 330px;
   }
   .hero-slider_body {
-    position: relative;
     max-width: 75%;
     margin: 1.5em 0 0 0 !important;
   }
