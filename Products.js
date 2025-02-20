@@ -35,7 +35,7 @@ const products = [
   ),
   new Product(
     3,
-    'Simply Orange Juice – 52 fl oz',
+    'Simply Orange Juice – 1L',
     './assets/image/product2.png',
     2.45,
     4.13,
@@ -153,7 +153,7 @@ const renderProducts = (products, cardIds, containerSelector, columnClass) => {
 };
 // Use the renderProducts function
 document.addEventListener('DOMContentLoaded', () => {
-  renderProducts(products, [1, 7, 3, 4, 5, 6], '.productRow-01');
+  renderProducts(products, [1, 2, 3, 4, 5, 6], '.productRow-01');
   renderProducts(products, [1, 2, 3, 4, 5, 6], '.productRow-02');
   renderProducts(products, [1, 2], '.productRow-03');
   renderProducts(products, [3, 4], '.productRow-04');

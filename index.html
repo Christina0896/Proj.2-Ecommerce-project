@@ -225,6 +225,7 @@
 
       <!-- Hero section: Displays the main promotional content and slider -->
       <!--Sidebar-->
+
       <div class="hero-container d-flex">
         <div class="cat_menu">
           <ul class="cat_list p-0">
@@ -469,22 +470,89 @@
         </div>
 
         <!-- Hero slider section -->
-        <div class="hero-slider d-flex align-items-center position-relative">
-          <div class="hero-slider_body position-absolute m-5 ps-5">
-            <p class="discount">Weekend discount</p>
-            <h1>Get the best quality products at the lowest prices</h1>
-            <p>We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
-            <div class="d-flex">
-              <button class="shop_nowbtn">Shop Now</button>
-              <div class="d-flex flex-column ms-3 mt-1">
-                <h4 class="new_price mb-0">
-                  €27.99 <span class="old_price text-decoration-line-through">€57.99</span>
-                </h4>
-                <span class="mini_text">Don't miss this limited time offer.</span>
+        <div id="carouselExampleCaptions" class="carousel slide ms-4 mt-3">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex align-items-center">
+                <div class="hero-slider_body position-absolute ms-5 ps-5">
+                  <p class="discount">Weekend discount</p>
+                  <h1>Get the best quality products at the lowest prices</h1>
+                  <p>
+                    We have prepared special discounts for you on grocery products. Don't miss these opportunities...
+                  </p>
+                  <div class="d-flex">
+                    <button class="shop_nowbtn">Shop Now</button>
+                    <div class="d-flex flex-column ms-3 mt-1">
+                      <h4 class="new_price mb-0">
+                        €27.99 <span class="old_price text-decoration-line-through">€57.99</span>
+                      </h4>
+                      <span class="mini_text">Don't miss this limited time offer.</span>
+                    </div>
+                  </div>
+                </div>
+                <img src="assets/image/slider-01.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="d-flex align-items-center">
+                <div class="hero-slider_body position-absolute ms-5 ps-5">
+                  <p class="discount">Exclusive Offer</p>
+                  <h1>Save big on your favorite items!</h1>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <div class="d-flex">
+                    <button class="shop_nowbtn">Shop Now</button>
+                    <div class="d-flex flex-column ms-3 mt-1">
+                      <h4 class="new_price mb-0">
+                        €27.99 <span class="old_price text-decoration-line-through">€57.99</span>
+                      </h4>
+                      <span class="mini_text">Don't miss this limited time offer.</span>
+                    </div>
+                  </div>
+                </div>
+                <img src="assets/image/slider-02.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
           </div>
-          <img class="ms-4" src="./assets/image/slider-01.png" alt="slide image" />
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
       <!--Features - where highlight the features of the online store-->
@@ -553,7 +621,7 @@
       <!--View all 02-->
       <div class="d-flex arrivals align-items-center my-3">
         <div class="d-inline-flex me-4">
-          <h6 class="fw-bold me-5">Featured Products</h6>
+          <h6 class="me-5">Featured Products</h6>
           <p class="">Dont miss this opportunity at a special discount just for this week.</p>
         </div>
         <button class="arrivalsbtn">View all -></button>
@@ -567,7 +635,7 @@
       <!--View all 03-->
       <div class="d-flex my-3 align-items-center arrivals">
         <div class="d-inline-flex me-5">
-          <h6 class="me-5 fw-bold">Best sellers</h6>
+          <h6 class="me-5">Best sellers</h6>
           <p class="">Dont miss this opportunity at a special discount just for this week.</p>
         </div>
         <button class="arrivalsbtn">View all -></button>
@@ -579,7 +647,7 @@
 
         <!--Banner 04-->
         <div class="banner">
-          <div class="row banner-04 me-2"><!--the  banner will show here--></div>
+          <div class="row banner-04"><!--the  banner will show here--></div>
         </div>
         <!--Products row 4 -->
 
@@ -590,7 +658,7 @@
         <div class="productRow-05"></div>
         <!--Banner 04-->
         <div class="banner">
-          <div class="banner-05 me-2"><!--the  banner will show here--></div>
+          <div class="banner-05"><!--the  banner will show here--></div>
         </div>
         <!--Products row 6 -->
 
@@ -616,7 +684,9 @@
               <input class="form-control" type="text" placeholder="Enter your email address" />
               <button class="btn btn-outline-secondary">SEND</button>
             </form>
-            <p>By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a></p>
+            <p class="subscribe">
+              By subscribing you agree to our <a href="#">Terms & Conditions and Privacy & Cookies Policy.</a>
+            </p>
           </div>
         </div>
         <div class="footer-list row mt-5">
