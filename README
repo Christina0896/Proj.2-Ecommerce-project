@@ -1,16 +1,53 @@
-E-Commerce Website
-A modern, responsive eCommerce website built using JavaScript and Bootstrap, following a design template from https://www.figma.com/design/DFYMKQPLYJVRBcuU9wS3E8/75%2B-Ecommerce-Landing-Page-Templates-(Community)?node-id=0-1&p=f&t=fjsFpGqkCqekkYNl-0.
+TinaStore - E-commerce Website
+TinaStore is a fully responsive and interactive e-commerce website built using HTML, CSS, JavaScript, and Bootstrap. It offers a seamless shopping experience with a well-structured layout, product listing, banners, and a fully functional Bootstrap carousel slider. The project is optimized for different screen sizes, ensuring a great user experience on both desktop and mobile.
+
+🌟 Features
+✔️ Responsive Design - Works perfectly on desktop, tablet, and mobile devices.
+✔️ Product Listings - Displays products dynamically with discounts, ratings, and cart functionality.
+✔️ Bootstrap Carousel Slider - Featured promotions displayed in an interactive slider.
+✔️ Category Sidebar - Easy navigation through product categories.
+✔️ Add to Cart Button - Allows users to add products to their cart easily.
+✔️ Wishlist Functionality - Users can favorite products for later.
+✔️ Dynamic Banners - Promotional banners that enhance user engagement.
+✔️ Multi-Currency & Multi-Language Support (Planned Feature) - Dropdowns for currency and language selection.
+✔️ Light/Dark Mode Toggle (Planned Feature) - Improve accessibility and user preference.
 
 🛠️ Technologies Used
-HTML5, CSS3
-Bootstrap 5 (for responsiveness and UI components)
-JavaScript (for dynamic functionality)
+Frontend: HTML, CSS, Bootstrap 5
+JavaScript: Vanilla JS for dynamic interactions
+Icons & Images: SVGs, custom images
+Grid & Flexbox: For layout structure
 
+TinaStore/
+│── assets/
+│   ├── images/        # Product images & banners
+│   ├── icons/         # SVG icons for UI elements
+│── css/
+│   ├── home.css       # Main styles
+│── js/
+│   ├── Banner.js      # Controls banner behavior
+│   ├── Products.js    # Handles product rendering
+│── index.html         # Main homepage
+│── README.md          # Project documentation (this file)
 
-🚀 Features
-🛍️ Homepage with Featured Products
-🔍 Search & Filtering Options
-🛒 Shopping Cart with Add/Remove Items
-💳 Checkout Page with Order Summary
-📱 Fully Responsive Design
-🌎 Multi-language & Currency Support (Planned)
+🎨 Customization
+If you want to modify this project:
+1️⃣ Modify the Products.js file to add/edit products.
+2️⃣ Update Banner.js to change banner text and images.
+3️⃣ Modify home.css for styling adjustments.
+
+🐞 Known Issues 
+Product Grid : the background of the product card is not well Design
+responsive : the website is not responsive on all devices.
+
+🎯 Future Improvements
+✅ User Authentication (Login/Signup)
+✅ Fully Functional Cart & Checkout
+✅ Backend Integration (Node.js/Express)
+✅ Database for Product Storage (MongoDB/Firebase)
+
+📬 Contact
+📧 Email: cristinbandeira82@gmail.com
+🐙 GitHub: https://github.com/Christina0896
+🌍 Live Demo:  https://christina0896.github.io/Proj.2-Ecommerce-project/
+
