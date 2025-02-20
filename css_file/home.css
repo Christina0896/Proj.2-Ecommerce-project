@@ -102,10 +102,10 @@
 }
 .home_navbar a:hover::after {
   width: 100%;
-  color: var(--backgroundcolor2);
+  color: var(--fontcolor1);
 }
 .home_navbar a.active {
-  color: var(--backgroundcolor2);
+  color: var(--fontcolor1);
 }
 .home_navbar a.active::after {
   width: 100%;
@@ -150,35 +150,37 @@
   background-color: rgba(243, 244, 246, 1);
 }
 /*Hero section*/
-.hero-slider img {
-  border-radius: 6px;
-  width: 100%;
-  height: 92%;
+.carousel-item img {
+  border-radius: 8px;
   object-fit: cover;
+  max-height: 447px;
+  width: 1016px !important;
 }
 .hero-slider_body {
+  flex-direction: column;
   color: rgba(57, 36, 95, 1);
   max-width: 45%;
 }
-.discount {
+.hero-slider_body .discount {
   color: rgba(22, 101, 52, 1);
   font-weight: 500;
   font-size: 0.8125rem; /* 13px */
   width: 10em;
-  height: 1.8em;
-  padding-left: 10px;
+  height: 1.5em;
+  padding-left: 8px;
   background: linear-gradient(to right, rgba(22, 163, 74, 0.5), rgba(34, 197, 94, 0));
   border-radius: 5px;
 }
+
 .hero-slider_body h1 {
   font-weight: 800;
 }
 .hero-slider_body p {
-  color: var(--fontcolor1);
+  color: var(--fontcolor3);
 }
 
 .shop_nowbtn {
-  color: var(--backgroundcolor1);
+  color: white;
   background-color: var(--backgroundcolor2);
   border: none;
   border-radius: 8px;
@@ -212,7 +214,7 @@
 .features p {
   color: var(--fontcolor2);
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   white-space: nowrap;
 }
 /*General banner sets */
@@ -220,8 +222,13 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.banner-04 img,
+.banner-05 img {
+  border-radius: 0px;
+  width: 368px;
+}
 .banner p {
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
 }
 .banner h4 {
   font-weight: 700;
@@ -233,14 +240,16 @@
   border-radius: 999px;
   width: 97px;
   height: 34px;
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   font-weight: 700;
 }
 /*Banner row*/
-.banner-01 img,
+.banner-01 img {
+  width: 99%;
+}
 .banner-02 img,
 .banner-03 img {
-  width: 99%;
+  width: 100%;
 }
 .banner-01 .banner-body,
 .banner-02 .banner-body,
@@ -260,12 +269,12 @@
   margin-top: 3em !important;
 }
 .banner-03 .banner-body h4 {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
 }
 
 .banner-promo img {
   /* Ensures the image scales to the width of its container */
-  max-width: 1260px;
+  max-width: 1290px;
 }
 
 /*View all*/
@@ -273,8 +282,11 @@
   justify-content: space-between;
   white-space: nowrap;
 }
+.arrivals h6 {
+  color: var(--fontcolor1);
+}
 .arrivals p {
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
   color: var(--fontcolor2);
 }
 .arrivalsbtn {
@@ -284,11 +296,13 @@
   border-radius: 999px;
   width: 97px;
   height: 34px;
-  font-size: 13px;
+  font-size: 0.8125rem; /* 13px */
 }
 /*general Card sets*/
 .product-card {
   position: relative;
+  background-color: white;
+  padding: 1em;
 }
 .card-body {
   flex-direction: column;
@@ -298,7 +312,7 @@
   object-fit: contain;
 }
 .card-title {
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -311,7 +325,7 @@
 }
 .card-price1 {
   color: red;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 700;
   text-align: start;
 }
@@ -321,7 +335,7 @@
 }
 .card-button {
   color: var(--backgroundcolor2);
-  background-color: var(--backgroundcolor1);
+  background-color: var(--btn);
   border: 1px solid var(--backgroundcolor2);
   border-radius: 999px;
   width: 190px;
@@ -652,9 +666,14 @@ footer span {
     top: 2em;
   }
   /*Hero slider*/
-  .hero-slider img {
+  .carousel {
     margin: 0 !important;
   }
+  .carousel-item img {
+    max-width: 100% !important;
+    margin: 1em 0 1.5em 0 !important;
+  }
+
   .hero-slider_body {
     max-width: 55%;
     padding: 0em !important;
@@ -701,7 +720,8 @@ footer span {
     height: 340px;
     margin-bottom: 1em;
   }
-  .banner-01 div ,.banner-02 div{
+  .banner-01 div,
+  .banner-02 div {
     padding: 0.3em !important;
     gap: 3em !important;
   }
@@ -867,17 +887,21 @@ footer span {
   }
 
   /* Hero */
-  .hero-slider {
-    margin-bottom: 1em;
+  .carousel {
+    margin: 0 !important;
   }
-  .hero-slider img {
-    margin: 2em 0 0em 0em !important;
-    max-width: 690px !important;
+  .carousel-item img {
+    max-width: 100% !important;
     height: 330px;
+    margin: 1em 0 1.5em 0 !important;
   }
   .hero-slider_body {
     max-width: 75%;
-    margin: 1.5em 0 0 0 !important;
+    margin: 0 !important;
+  }
+  .discount {
+    font-size: 10px;
+    margin: 0 !important;
   }
   .hero-slider_body h1 {
     font-size: 20px;

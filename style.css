@@ -2,6 +2,7 @@
 :root {
   --backgroundcolor1: #ffffff;
   --backgroundcolor2: #634c9f;
+  --btn:#ffffff;
   --fontcolor1: #030712;
   --fontcolor2: #6b7280;
   --fontcolor3: #6b7280;
@@ -31,6 +32,7 @@ select {
 .dark_mode {
   --backgroundcolor1: #070b1d;
   --backgroundcolor2: #634c9f;
+  --btn:white;
   --fontcolor1: white;
   --fontcolor2: #ffffff;
   --fontcolor3: #6b7280;
